@@ -1,11 +1,16 @@
 {
-    "name": "@dddforum/frontend",
-    "version": "1.0.0",
-    "main": "index.js",
-    "dependencies": {
-      "@dddforum/shared": "file:../shared"
-
-    },
-    "devDependencies": {
-    }
+  "name": "@dddforum/frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@dddforum/shared": "file:../shared"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.11"
+  },
+  "scripts": {
+    "test:e2e": "jest -c jest.config.e2e.ts",
+    "start:dev": "vite"
   }
+}
